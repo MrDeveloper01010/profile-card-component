@@ -19,13 +19,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(./images/bg-pattern-top.svg);
-    background-position-x: calc(-170px);
-    background-position-y: calc(-130px);    
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
+    background-position: calc(50vw - 998px) calc(50vh - 892px), calc(50vw - 29px) calc(50vh + 14px);   
     background-color: hsl(185, 75%, 39%);
-    background-size: 820px;
-    background-attachment: fixed;
 }
 
 header{
@@ -38,13 +35,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./images/bg-pattern-bottom.svg);
-    background-position-x: calc(100% + 170px);
-    background-position-y: calc(100% + 130px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 820px;
-
 }
 
 main>div.ctn{
@@ -145,64 +135,14 @@ footer>div a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
 }
-
-@media (max-width:1795px) {
-    body{
-    background: url(./images/bg-pattern-top.svg);
-    background-position:-90px -90px;
-    background-repeat: no-repeat;
-    background-color: hsl(185, 75%, 39%);
-    background-attachment: fixed;
-    background-size: 400px;
-    }
-    main{
-    background: url(./images/bg-pattern-bottom.svg);
-    background-position-x: calc(100% + 90px);
-    background-position-y: calc(100% + 90px);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-attachment: fixed;
-    }
-    
+@media (max-width: 900px){
+body {
+    background-size: 640px;
+    background-position: calc(50vw - 615px) calc(50vh - 706px), calc(50vw - 24px) calc(50vh + 20px);
 }
-@media (max-width:1795px) {
-    body{
-    background: url(./images/bg-pattern-top.svg);
-    background-position:-90px -200px;
-    background-repeat: no-repeat;
-    background-color: hsl(185, 75%, 39%);
-    background-attachment: fixed;
-    background-size: 400px;
-    }
-    main{
-    background: url(./images/bg-pattern-bottom.svg);
-    background-position-x: calc(100% + 90px);
-    background-position-y: calc(100% + 200px);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-attachment: fixed;
-    }
-    
 }
 
 @media (max-width:365px) {
-    body{
-    background: url(./images/bg-pattern-top.svg);
-    background-position:-200px -120px;
-    background-repeat: no-repeat;
-    background-color: hsl(185, 75%, 39%);
-    background-attachment: fixed;
-    background-size: 400px;
-    }
-    main{
-    background: url(./images/bg-pattern-bottom.svg);
-    background-position-x: calc(100% + 200px);
-    background-position-y: calc(100% + 120px);
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-attachment: fixed;
-    }
-
     main>div.ctn{
         margin: .5em;
     }
